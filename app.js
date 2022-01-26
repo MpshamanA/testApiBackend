@@ -11,9 +11,7 @@ const con = mysql.createConnection({
   password: PASSWORD,
   database: DATABASENAME,
 });
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+
 //SQLサーバーへの接続
 con.connect((err) => {
   if (err) throw err;
